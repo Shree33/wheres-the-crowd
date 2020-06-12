@@ -1,13 +1,14 @@
 {
-  "name": "gatsby-starter-event-calendar",
+  "name": "wheres-the-crowd",
   "version": "1.0.0",
-  "description": "A customizable calendar event starter for Gatsby integrated with Google Spreadsheet",
-  "author": "Ema Suriano <emanuel.suriano@gmail.com>",
+  "description": "An event calendar",
+  "author": "Shreenath Bhanderi",
   "scripts": {
-    "build": "gatsby build",
+    "build": "node -p 'process.env' && gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "start": "yarn develop",
-    "lint": "eslint --ext .ts,.tsx src"
+    "lint": "eslint --ext .ts,.tsx src",
+    "lambda-build": "netlify-lambda build functions && node -p 'process.env'"
   },
   "dependencies": {
     "@types/react-helmet": "^6.0.0",
@@ -33,7 +34,6 @@
     "react-github-corner": "^2.3.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.1.0",
-    "netlify-plugin-inline-functions-env":"^1.0.4",
     "uuid": "^8.1.0"
   },
   "devDependencies": {

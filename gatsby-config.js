@@ -3,7 +3,7 @@ require('dotenv').config({ systemvars: true });
 
 
 
-const buildCredentials = ({ PROJECT_ID, PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
+const buildCredentials = ({ PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
   type: "service_account",
   project_id: "events-279922",
   private_key_id: PRIVATE_KEY_ID,
