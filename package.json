@@ -33,6 +33,7 @@
     "react-github-corner": "^2.3.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.1.0",
+    "netlify-plugin-inline-functions-env":"^1.0.4",
     "uuid": "^8.1.0"
   },
   "devDependencies": {

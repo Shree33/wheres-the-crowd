@@ -1,6 +1,8 @@
 const appConfig = require('./appConfig');
 require('dotenv').config();
 
+
+
 const buildCredentials = ({ PROJECT_ID, PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
   type: "service_account",
   project_id: "events-279922",
