@@ -10,7 +10,6 @@ import Layout from '../components/Layout';
 import groupEventsByMonth from '../utils/groupEventsByMonth';
 import { format } from 'date-fns';
 
-// override this query with your own questions!
 const SPREADSHEET_QUERY = graphql`
   query eventsQuery {
     site {
@@ -18,13 +17,18 @@ const SPREADSHEET_QUERY = graphql`
         limitMonthInTheFuture
       }
     }
-    allGoogleSheetEventsRow {
+    allGoogleSheetFormResponses1Row {
       nodes {
         id
         eventName: whatisthename
         date: when
         eventLink: linktotheevent
         place: where
+        price
+        tags
+        time
+        address
+        description
       }
     }
   }
@@ -34,13 +38,13 @@ const CalendarPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState<ModalData>();
 
-  const { allGoogleSheetEventsRow, site } = useStaticQuery(SPREADSHEET_QUERY);
+  const { allGoogleSheetFormResponses1Row, site } = useStaticQuery(SPREADSHEET_QUERY);
   const { limitMonthInTheFuture } = site.siteMetadata;
 
   const months = useMemo(
     () =>
-      groupEventsByMonth(allGoogleSheetEventsRow.nodes, limitMonthInTheFuture),
-    [allGoogleSheetEventsRow.nodes, limitMonthInTheFuture],
+      groupEventsByMonth(allGoogleSheetFormResponses1Row.nodes, limitMonthInTheFuture),
+    [allGoogleSheetFormResponses1Row.nodes, limitMonthInTheFuture],
   );
 
   const openModal = useCallback((data: ModalData) => {
@@ -64,8 +68,6 @@ const CalendarPage = () => {
       {showModal && (
         <ModalEvent onClose={() => setShowModal(false)} {...modalData!} />
       )}
-
-      <GithubCorner href="https://github.com/EmaSuriano/gatsby-starter-event-calendar" />
       <Footer />
     </Layout>
   );

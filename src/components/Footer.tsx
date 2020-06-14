@@ -10,10 +10,6 @@ const Footer = () => (
       </Anchor>
       &nbsp; ❤
     </Text>
-    <Text>
-      Developed by &nbsp;
-      <Anchor href="http://emasuriano.com/">Ema Suriano</Anchor>
-    </Text>
   </Box>
 );
 
