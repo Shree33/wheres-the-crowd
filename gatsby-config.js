@@ -1,13 +1,16 @@
 const appConfig = require('./appConfig');
-require('dotenv').config({ systemvars: true });
+require("dotenv").config({
+  path: `.env`,
+})
 
-
+//var GSAobj = JSON.parse(process.env.GSA_KEY)
+//var GSAobj = JSON.parse(GSAstring)
 
 const buildCredentials = ({ PRIVATE_KEY, PRIVATE_KEY_ID }) => ({
   type: "service_account",
   project_id: "events-279922",
   private_key_id: PRIVATE_KEY_ID,
-  private_key: PRIVATE_KEY,
+  private_key: PRIVATE_KEY.replace(/\\n/g, '\n'),
   client_email: "eventsprocessor@events-279922.iam.gserviceaccount.com",
   client_id: '115316605307835110587',
   auth_uri: 'https://accounts.google.com/o/oauth2/auth',
@@ -31,7 +34,7 @@ module.exports = {
       options: {
         spreadsheetId: SPREADSHEET_ID,
         worksheetTitle: 'Form Responses 1',
-        credentials: buildCredentials(process.env),
+        credentials: buildCredentials(process.env)
       },
     },
     {
