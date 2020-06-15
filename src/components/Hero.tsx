@@ -29,7 +29,7 @@ const Hero = () => {
 
   return (
     <Box
-      a11yTitle="Calendar events title"
+      a11yTitle="where's the crowd"
       align="center"
       flex="grow"
       height="100vh"
@@ -37,9 +37,7 @@ const Hero = () => {
       pad="medium"
       animation="slideDown"
     >
-      <Box width="small" height="small">
-        <Image fit="contain" src={logoSrc} a11yTitle="logo" />
-      </Box>
+
 
       <Separator />
 
@@ -61,13 +59,6 @@ const Hero = () => {
           label="See all the events"
           a11yTitle="See all the events"
           primary
-        />
-        <HeroButton
-          href={formLink}
-          label="Add your event!"
-          a11yTitle="Add your event!"
-          color="secondary"
-          target="_blank"
         />
       </Box>
     </Box>

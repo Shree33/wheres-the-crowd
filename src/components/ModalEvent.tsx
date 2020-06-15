@@ -65,7 +65,7 @@ const EventDescription = ({ event }: { event: EventInfo }) => (
     justify="center"
   >
     <Text a11yTitle="Event time" margin="small" color="calendar-modal-text">
-      {format(new Date(event.date).setUTCMinutes(180), 'HH:mm')}
+      {event.time}
     </Text>
     <Box margin="small" width="medium">
       <Text
@@ -79,7 +79,24 @@ const EventDescription = ({ event }: { event: EventInfo }) => (
 
       {event.place && (
         <Text a11yTitle="Event place" color="calendar-modal-text">
-          {event.place}
+          {event.place} {event.address}
+        </Text>
+      )}
+
+      {event.price && (
+        <Text a11yTitle="Event price" color="calendar-modal-text">
+          {event.price}
+        </Text>
+      )}
+      {event.description && (
+        <Text a11yTitle="Event description" color="calendar-modal-text">
+          {event.description}
+        </Text>
+      )}
+
+      {event.tags && (
+        <Text a11yTitle="Event tags" color="calendar-modal-text" dropAlign="bottom" size="small" weight="bold">
+          {event.tags}
         </Text>
       )}
 
