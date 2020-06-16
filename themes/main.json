@@ -1,41 +1,42 @@
 {
-  "background": "#ffffff",
-  "brand": "#A6DEA9",
+  "background": "#ffffffbb",
+  "brand": "#DD91C6",
   "secondary": "#3E8914",
-  "focus": "#3E8914",
-  "text": "8F9299",
-  "border": "262626",
-
+  "focus": "#262626",
+  "text": "#262626",
+  "font": {
+  "family": "Poppins"
+},
   "calendar": {
     "today": {
-      "background": "#8F9299",
+      "background": "#B4B6BB",
       "text": "262626",
-      "border": "262626"
+      "border": "ffffffbb"
     },
     "day": {
       "background": "#ffffffbb",
       "text": "262626",
-      "border": "262626"
+      "border": "141414"
     },
     "past": {
       "background": "#ffffff73",
       "text": "262626",
-      "border": "262626"
+      "border": "ffffffbb"
     },
     "empty": {
       "background": "transparent",
-      "border": "262626"
+      "border": "ffffffbb"
     },
     "weekdays": {
       "background": "#ffffff22",
-      "border": "262626"
+      "border": "ffffffbb"
     },
     "event": {
-      "background": "#8FD694",
-      "text": "262626"
+      "background": "#DD91C6",
+      "text": "F5F5F5"
     },
     "past-event": {
-      "background": "#8F9299",
+      "background": "#B4B6BB",
       "text": "262626"
     },
     "modal": {

@@ -10,6 +10,12 @@ const Footer = () => (
       </Anchor>
       &nbsp; ❤
     </Text>
+    <Text>
+      Questions? Contact us at: 
+      <Anchor href="mailto:info@wheresthecrowd.com">
+        <b>info@wheresthecrowd.com</b>
+      </Anchor>
+    </Text>
   </Box>
 );
 

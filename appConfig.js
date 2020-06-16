@@ -3,5 +3,5 @@ module.exports = {
   subTitle: 'The easiest option to share events!',
   formLink: 'https://forms.gle/TJ1hKbYV76Fwennw5',
   limitMonthInTheFuture: 2,
-  theme: require('./themes/wtctheme.json'),
+  theme: require('./themes/main.json'),
 };

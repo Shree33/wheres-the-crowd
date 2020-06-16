@@ -30,14 +30,15 @@ const Day = ({ date, events, onClick }: Props) => {
       onClick={onClick}
       square
     >
-      <Box direction="row" fill="vertical">
+      <Box direction="column" fill="vertical" gap="small">
         <Show size="small">
           <RowDay date={date} type={dayType} />
         </Show>
-        <Events events={events} hasPast={hasPast} />
         <Hide size="small">
           <CalendarDay date={date} type={dayType} />
         </Hide>
+        <Events events={events} hasPast={hasPast} />
+
       </Box>
     </CalendarBox>
   );
@@ -73,8 +74,8 @@ const DayText = styled(Text)<{ type: string }>`
   text-decoration: ${(props) =>
     props.type === 'past' ? 'line-through' : 'inherit'};
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  top: 5px;
+  left: 10px;
 `;
 
 export default Day;

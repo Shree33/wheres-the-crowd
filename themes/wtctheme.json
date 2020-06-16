@@ -11,25 +11,25 @@
     "today": {
       "background": "#B4B6BB",
       "text": "262626",
-      "border": "262626"
+      "border": "ffffffbb"
     },
     "day": {
       "background": "#ffffffbb",
       "text": "262626",
-      "border": "262626"
+      "border": "141414"
     },
     "past": {
       "background": "#ffffff73",
       "text": "262626",
-      "border": "262626"
+      "border": "141414"
     },
     "empty": {
       "background": "transparent",
-      "border": "262626"
+      "border": "141414"
     },
     "weekdays": {
       "background": "#ffffff22",
-      "border": "262626"
+      "border": "141414"
     },
     "event": {
       "background": "#DD91C6",
