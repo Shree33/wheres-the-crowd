@@ -9,6 +9,7 @@ import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import groupEventsByMonth from '../utils/groupEventsByMonth';
 import { format } from 'date-fns';
+import Filter from '../components/Calendar/Filter'
 
 const SPREADSHEET_QUERY = graphql`
   query eventsQuery {
@@ -34,6 +35,9 @@ const SPREADSHEET_QUERY = graphql`
   }
 `;
 
+
+
+
 const CalendarPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState<ModalData>();
@@ -55,7 +59,6 @@ const CalendarPage = () => {
   return (
     <Layout>
       <Hero />
-
       <Box id="calendars" animation="fadeIn">
         {months.map((month) => (
           <Month
