@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { Box } from 'grommet';
 import { graphql, useStaticQuery } from 'gatsby';
-import GithubCorner from '../components/GithubCorner';
 import Footer from '../components/Footer';
 import ModalEvent from '../components/ModalEvent';
 import Month from '../components/Calendar/Month';
@@ -38,9 +37,10 @@ const SPREADSHEET_QUERY = graphql`
 
 
 
-const CalendarPage = () => {
+var CalendarPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState<ModalData>();
+  const [filter, setFilter] = useState('');
 
   const { allGoogleSheetFormResponses1Row, site } = useStaticQuery(SPREADSHEET_QUERY);
   const { limitMonthInTheFuture } = site.siteMetadata;
