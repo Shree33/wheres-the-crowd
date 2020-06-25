@@ -44,7 +44,6 @@ const Helmet = () => {
     { property: 'og:description', content: subtitle },
     { property: 'og:site_name', content: title },
   ];
-
   return (
     <ReactHelmet
       title={title}
@@ -55,12 +54,17 @@ const Helmet = () => {
         href="https://fonts.googleapis.com/css?family=Montserrat|Raleway"
         rel="stylesheet"
       />
-                  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-           crossorigin=""/>
-           <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-           integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-           crossorigin=""></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170892135-1"></script>
+      <script>
+       {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-170892135-1');
+
+      `}
+      </script>
+
     </ReactHelmet>
   );
 };
