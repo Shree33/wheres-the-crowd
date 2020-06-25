@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Helmet as ReactHelmet } from 'react-helmet';
 
+
 const BASE_TAGS = [
   { charset: 'utf-8' },
   {
@@ -34,11 +35,6 @@ const Helmet = () => {
     { itemprop: 'description', content: subtitle },
     { name: 'description', content: subtitle },
 
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: title },
-    { name: 'twitter:title', content: title },
-    { name: 'twitter:description', content: subtitle },
-
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: title },
     { property: 'og:description', content: subtitle },
@@ -54,17 +50,6 @@ const Helmet = () => {
         href="https://fonts.googleapis.com/css?family=Montserrat|Raleway"
         rel="stylesheet"
       />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170892135-1"></script>
-      <script>
-       {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-170892135-1');
-
-      `}
-      </script>
-
     </ReactHelmet>
   );
 };
