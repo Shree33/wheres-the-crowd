@@ -1,16 +1,17 @@
 import React from 'react';
-import { Box, Text, Anchor } from 'grommet';
+import { Box, Text, Anchor, Form, Button, TextInput } from 'grommet';
+
 
 const Footer = () => (
   <Box tag="footer" justify="between" direction="row" pad="medium">
     
-    <form action="https://getform.io/f/b61c1bc5-c567-4f7e-ace8-3e55883a188d" method="POST">
+    <Form action="https://getform.io/f/b61c1bc5-c567-4f7e-ace8-3e55883a188d" method="POST">
 
       <Text>Want events sent to your mailbox? Put in your email here! </Text>
-      <input type="email" name="email"></input>
-      <button type="submit">Send</button>
+      <TextInput type="email" name="email"></TextInput>
+      <Button type="submit" label="send" alignSelf="end" background={`brand`}>Send</Button>
 
-    </form>
+    </Form>
 
     <Text>
       Questions? Contact us at: 
