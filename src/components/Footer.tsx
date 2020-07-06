@@ -7,15 +7,15 @@ const Footer = () => (
     <Form direction="row" action="https://getform.io/f/b61c1bc5-c567-4f7e-ace8-3e55883a188d" method="POST">
       <Box direction="row" >
         <FormField name ="instructions" label="Want events sent to your mailbox? Put in your email here!"> 
-        <TextInput type="email" name="email"></TextInput>
+        <TextInput label="email" type="email" name="email"></TextInput>
         </FormField>
         <Button type="submit" label="send" alignSelf="end" secondary gap="xsmall" margin="xsmall"></Button>
       </Box>
-      
+
     <Text alignSelf="end">
       Questions? Contact us at: 
       <Anchor href="mailto:info@wheresthecrowd.com">
-        <b>info@wheresthecrowd.com</b>
+        <b primary >info@wheresthecrowd.com</b>
       </Anchor>
     </Text>
     </Form>

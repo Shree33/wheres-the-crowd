@@ -46,10 +46,6 @@ const Helmet = () => {
       htmlAttributes={{ lang: 'en' }}
       meta={BASE_TAGS.concat(metaTags)}
     >
-      <link
-        href="https://fonts.googleapis.com/css?family=Montserrat|Raleway"
-        rel="stylesheet"
-      />
     </ReactHelmet>
   );
 };

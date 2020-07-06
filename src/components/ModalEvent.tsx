@@ -2,8 +2,6 @@ import React, { ReactNode, Fragment } from 'react';
 import { Layer, Box, Text, Button } from 'grommet';
 import { FormClose } from 'grommet-icons';
 import { format } from 'date-fns';
-import ReactGA from "react-ga"
-
 
 type Props = ModalData & {
   onClose: () => void;
@@ -56,10 +54,6 @@ const Header = ({ onClick, children }: HeaderProps) => (
       a11yTitle="Close popup button"
       onClick={onClick}
     />
-      {ReactGA.event({
-        category: 'user',
-        action: 'event clicked'
-      })}
   </Box>
 );
 
@@ -97,8 +91,7 @@ const EventDescription = ({ event }: { event: EventInfo }) => (
         </Text>
       )}
       {event.description && (
-        <Text a11yTitle="Event description" color="calendar-modal-text">
-          {event.description}
+        <Text a11yTitle="Event description" color="calendar-modal-text" dangerouslySetInnerHTML={{__html: event.description}}>
         </Text>
       )}
 

@@ -8,6 +8,8 @@ import {
 } from 'date-fns';
 import { parseEventDate } from './parseDate';
 
+
+
 const removeOldAndFutureEvents = (
   event: EventInfo,
   today: Date,
@@ -27,6 +29,7 @@ const groupEventsByMonth = (
   monthsDifferenceThreshold: number,
 ): MonthInfo[] => {
   const today = new Date();
+
 
   const eventsByMonthKey = events
     .filter((event) =>

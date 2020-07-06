@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-event-calendar',
-        short_name: 'starter-calendar',
+        name: 'event-calendar',
+        short_name: 'calendar',
         start_url: '/',
         background_color: theme.background,
         theme_color: theme.brand,

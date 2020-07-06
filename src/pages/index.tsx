@@ -8,7 +8,6 @@ import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import groupEventsByMonth from '../utils/groupEventsByMonth';
 import { format } from 'date-fns';
-import Filter from '../components/Calendar/Filter'
 import { initGA, logPageView } from "../components/GoogleAnalytics.tsx"
 
 const SPREADSHEET_QUERY = graphql`
