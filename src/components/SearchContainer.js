@@ -13,7 +13,6 @@ const SEARCH_QUERY = graphql`
         date: when
         eventLink: linktotheevent
         place: where
-        price
         tags
         time
         address
