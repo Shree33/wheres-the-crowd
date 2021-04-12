@@ -2027,6 +2027,12 @@ patch:
         patched: '2021-04-11T21:37:02.021Z'
     - gatsby-cli > gatsby-recipes > contentful-management > lodash:
         patched: '2021-04-11T21:37:02.021Z'
+    - gatsby > babel-plugin-lodash > lodash:
+        patched: '2021-04-12T23:31:12.119Z'
+    - gatsby > babel-plugin-lodash > @babel/types > lodash:
+        patched: '2021-04-12T23:31:12.119Z'
+    - gatsby > babel-plugin-lodash > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2021-04-12T23:31:12.119Z'
   'npm:lodash:20180130':
     - gatsby-source-google-sheets > google-spreadsheet > lodash:
         patched: '2020-07-01T11:49:38.308Z'
