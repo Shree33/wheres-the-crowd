@@ -19,6 +19,7 @@
     "cryptiles": "^4.1.3",
     "date-fns": "^2.20.1",
     "dotenv": "^8.2.0",
+<<<<<<< HEAD
     "eslint": "^7.24.0",
     "gatsby": "^2.32.12",
     "gatsby-cli": "^2.19.2",
@@ -31,6 +32,20 @@
     "gatsby-plugin-styled-components": "^3.10.0",
     "gatsby-plugin-typescript": "^2.12.1",
     "gatsby-source-filesystem": "^2.11.1",
+=======
+    "eslint": "^7.3.1",
+    "gatsby": "^3.0.0",
+    "gatsby-cli": "^2.18.0",
+    "gatsby-image": "^2.4.6",
+    "gatsby-plugin-manifest": "^2.4.10",
+    "gatsby-plugin-offline": "^3.2.8",
+    "gatsby-plugin-react-helmet": "^3.3.3",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.6.31",
+    "gatsby-plugin-styled-components": "^3.3.3",
+    "gatsby-plugin-typescript": "^2.4.4",
+    "gatsby-source-filesystem": "^2.3.10",
+>>>>>>> ec98e7f90e82d7ecb9cdcd10d988d41a7dc99326
     "gatsby-source-google-sheets": "^1.1.1",
     "gatsby-transformer-sharp": "^2.12.1",
     "grommet": "^2.17.1",
@@ -42,10 +57,17 @@
     "react-ga": "^3.3.0",
     "react-github-corner": "^2.5.0",
     "react-helmet": "^6.1.0",
+<<<<<<< HEAD
     "react-leaflet": "^2.8.0",
     "snyk": "^1.530.0",
     "styled-components": "^5.2.3",
     "uuid": "^8.3.2"
+=======
+    "react-leaflet": "^2.7.0",
+    "styled-components": "^5.1.0",
+    "uuid": "^8.1.0",
+    "snyk": "^1.530.0"
+>>>>>>> ec98e7f90e82d7ecb9cdcd10d988d41a7dc99326
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.9",
